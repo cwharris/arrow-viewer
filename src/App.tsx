@@ -8,11 +8,11 @@ import { useArrowTableFromFileInput } from './hooks/useArrowTable';
 export function App() {
 
   const [size] = useWindowSize();
-  const [arrowTable, fileInput] = useArrowTableFromFileInput();
+  const [table, fileInput] = useArrowTableFromFileInput();
 
   return (
-    arrowTable
-      ? <ArrowTableGrid {...size} table={arrowTable} />
+    table
+      ? <ArrowTableGrid {...size} table={table} />
       : <input {...fileInput}></input>
   );
 }
