@@ -7,10 +7,14 @@ export function useWindowSize(): [{ width: number, height: number }] {
     });
   
     React.useEffect(() => {
-      window.onresize = () => setSize({
-        width: window.innerWidth,
-        height: window.innerHeight
-      });
+      window.addEventListener('resize', onResize);
+      return () => window.removeEventListener('resize', onResize);
+      function onResize(this: Window) {
+        setSize({
+          width: this.innerWidth,
+          height: this.innerHeight
+        });
+      }
       
     }, []);
   
