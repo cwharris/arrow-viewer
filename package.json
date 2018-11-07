@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "apache-arrow": "0.3.1",
+    "apache-arrow": "graphistry/arrow#348d735ef44f68199e7e6b66778a5bbda5f8d99c",
     "react": "^16.7.0-alpha",
     "react-dom": "^16.7.0-alpha",
     "react-scripts-ts": "3.1.0",
