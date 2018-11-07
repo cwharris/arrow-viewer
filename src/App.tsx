@@ -22,7 +22,7 @@ function ArrowTableGrid({ table, width, height }: { table: Arrow.Table, width: n
   function cellRenderer({ key, style, columnIndex, rowIndex }: ReactVirtualized.GridCellProps): React.ReactNode {
     return <div key={key} style={style}>
       <div style={{ padding: 20 }}>
-        {`${table.get(columnIndex).get(rowIndex)}` }
+        {`${table.getColumnAt(columnIndex)!.get(rowIndex)}` }
       </div>
     </div>
   }
