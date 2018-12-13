@@ -31,6 +31,7 @@
     "importHelpers": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
+    "skipLibCheck": true,
     "noUnusedLocals": true,
     "downlevelIteration": true
   },
